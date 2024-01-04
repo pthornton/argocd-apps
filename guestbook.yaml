@@ -23,6 +23,10 @@ spec:
     spec:
       project: default
       source:
+        helm:
+          parameters:
+          - name: "custom"
+            value: "custom value"
         repoURL: "git@github.com:pthornton/guestbook-test.git"
         targetRevision: HEAD
         path: helm
