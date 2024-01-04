@@ -25,8 +25,10 @@ spec:
       source:
         helm:
           parameters:
-          - name: "custom"
-            value: "custom value"
+          - name: "custom1"
+            value: "custom value 1"
+          - name: "custom2"
+            value: "custom value 2"
         repoURL: "git@github.com:pthornton/guestbook-test.git"
         targetRevision: HEAD
         path: helm
