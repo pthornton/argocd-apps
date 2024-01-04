@@ -29,6 +29,8 @@ spec:
             value: "custom value 1"
           - name: "custom2"
             value: "custom value 2"
+          - name: "custom3"
+            value: "custom value 3"
         repoURL: "git@github.com:pthornton/guestbook-test.git"
         targetRevision: HEAD
         path: helm
