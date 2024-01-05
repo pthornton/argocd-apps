@@ -7,6 +7,7 @@ spec:
   generators:
     - matrix:
         generators:
+          - clusters: {}
           - scmProvider:
               github:
                 organization: pthornton-argocd
@@ -18,7 +19,6 @@ spec:
               filters:
               - repositoryMatch: ^*
                 pathsExist: [helm,catalog-info.yaml]
-          - clusters: {}
   template:
     metadata:
       name: '{{ repository }}'
