@@ -1,6 +1,5 @@
 ---
-apiVersion: argoproj.io/v1alpha1
-kind: ApplicationSet
+apiVersion: argoproj.io/v1alpha1 kind: ApplicationSet
 metadata:
   name: argocd-github-cluster-apps
 spec:
@@ -19,6 +18,7 @@ spec:
               filters:
               - repositoryMatch: ^*
                 pathsExist: [helm,catalog-info.yaml]
+		labelMatch: argocd-dev
   template:
     metadata:
       name: '{{ repository }}'
