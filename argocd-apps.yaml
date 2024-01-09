@@ -18,7 +18,6 @@ spec:
               cloneProtocol: ssh
               filters:
               - pathsExist: [helm,catalog-info.yaml]
-                labelMatch: argocd-dev
   template:
     metadata:
       name: '{{ repository }}'
