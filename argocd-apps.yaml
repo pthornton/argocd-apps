@@ -17,9 +17,8 @@ spec:
                   key: token
               cloneProtocol: ssh
               filters:
-              - repositoryMatch: ^*
+              - labelMatch: 'argocd-dev'
                 pathsExist: [helm,catalog-info.yaml]
-                labelMatch: 'argocd-dev'
   template:
     metadata:
       name: '{{ repository }}'
